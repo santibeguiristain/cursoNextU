@@ -1,0 +1,136 @@
+
+/*slider*/
+#contenido {
+  animation-duration: 3s;
+  animation-name: animacionUp;
+}
+
+@keyframes animacionUp {
+  
+
+0%{
+	transform:translate(0px,25px);
+}
+ 0%{
+	transform:translate(0px,0);
+}
+ 0%{
+	transform:translate(0px,-29px);
+}
+ 0%{
+	transform:translate(0px,-56px);
+}
+ 0%{
+	transform:translate(0px,-85px);
+}
+ 0%{
+	transform:translate(0px,-85px);
+}
+ 0%{
+	transform:translate(0px,23px);
+}
+ 
+  
+ 
+}
+ 
+/*slider-------------------fin--------------------------*/
+
+
+
+ /*
+ Establece el fondo de color #5b7989.
+ Aplica bordes redondeados en las esquinas superiores a 10px.
+ */
+ header
+{
+	width: 98%;
+	background-color: #5b7989;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	height: 120px;
+ 
+}
+
+/*
+Titulo a la izquierda
+En blanco
+Sombra 2px
+color #02010a.
+ */
+#TituloCabecera 
+{
+	text-align: left;	
+	color:white;
+	text-shadow:  0px 2px #02010a;
+	margin-left: 2%;
+}
+
+
+/*
+Desarrolla un menú, para la versión desktop, a la derecha con enlaceas a tres páginas: Inicio, Paisajes, Retratos. 
+La página actual debe tener estilo sin subrayado (html).
+*/
+
+#Menu 
+{
+	margin-right: 7%;
+	text-align: right;	
+}
+
+
+/*--*/
+
+
+
+body{
+	 background: #02010a;
+	color: black;
+	font-size: 16px;
+	font: italic normal 300 15px/15px Dancing Script;
+}
+
+
+	#contenido
+	{
+		width: 960px;
+		margin: 0 auto;
+	}
+
+
+
+
+
+/*footer*/
+ 
+/*
+Aplica bordes redondeados en las esquinas inferiores a 10px.
+Aplica el color de fondo #C6d5c5.
+*/
+  
+
+
+ footer
+ {
+ 	width: 98%;
+  
+ }
+ footer div
+ {
+ 	  width: 100%;
+ 	  padding: 1vh 1vw; 
+ }
+
+ #columnasFooter
+ {
+ 	 width: 98%;
+     display: flex;
+     border-radius:0px 0px 10px 10px;
+     background-color: #C6d5c5;
+	 padding: 1vh 1vw; 
+	 text-align: center; 
+	 
+ }
+ 

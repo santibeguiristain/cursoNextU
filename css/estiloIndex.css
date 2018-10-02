@@ -1,0 +1,193 @@
+ 
+
+/*
+Imagen Central en esta sección debes ubicar una imagen de tu preferencia, considera lo siguiente:
+Esta secccion debe tener la imagen centrada.
+Establece como color de fondo #82c3a6.
+*/
+
+
+article
+{
+
+	text-align: center;
+	box-sizing: border-box;
+	float:left;
+	padding: 1%;
+	height: 400px;
+}
+section
+{
+	width: 98%;
+}
+
+
+/*
+Establece como color de fondo #82c3a6. Image principal
+*/
+#columna1
+{
+
+	width: 100%;
+	padding: 1%;
+    text-align: center;
+    background-color: #82c3a6;
+}
+
+
+/*
+Aplica como color de fondo #d5c75f
+borde de 1px.
+Utilizar flex (article)
+*/ 
+#columna2,#columna3
+{
+	width: 50%;
+	background-color: #d5c75f;
+	padding: 1%;
+	 
+}
+
+ 
+#imagenPrincipal
+{
+  width: 80%;
+  height: 95%;
+}
+
+ 
+
+
+/*
+Cada columna debe tener una imagen centrada y enlazar:  (enlazada a nivel de html)
+la izquierda "paisajes" 
+aplica un efecto de rotación de 10 grados cuando se coloca el puntero sobre ella, 
+agrega color de sombra #82c3a6 y borde 2px y la derecha "retratos" aplica un efecto de traslación de 5px hacia arriba y 20px a la derecha cuando se coloca el puntero del 
+ratón sobre ella agrega color de 
+sombra #82c3a6 y borde 2px.
+ */
+
+
+#imagen1,#imagen2  
+ {
+	text-align: center;
+	border: none;
+	background-color: #82c3a6;
+	width: 100%;
+  height: 80%;
+ }
+
+
+/*eventos imagenes*/
+/*Evento imagen*/
+#imagen1:hover {
+ /* rotate imagen en un segundo*/
+  transition: all 1s;
+  transform: rotate(10deg);
+  /*Sombra*/
+  box-shadow: 2px 2px 5px #82c3a6;
+  /*Borde  al rotar la imagen (solicitado por la letra , != del video)*/
+  border: 2px solid black; 				 
+}
+
+
+
+
+#imagen2:hover{
+	 transition: all 1s;
+	 transform: translate(20px,-5px) /*20 derecha , 5 arriba*/
+	 box-shadow: 2px 2px 5px #82c3a6;
+	 /*Borde  al traladar la imagen (solicitado por la letra , != del video)*/
+	 border: 2px solid black;
+ }
+
+
+
+
+
+ 
+
+@media screen and (min-width: 900px){
+
+	#contenido
+	{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#TituloCabecera 
+	{
+		text-align: left;	
+		text-shadow:  0px 2px #02010a;
+	}
+
+	#Menu 
+	{
+	    margin-right: 5%;
+	    text-align: right;	
+	}
+  
+ 	footer div
+	{
+		width: 100%;
+	}
+
+	#columnasFooter
+	 {
+	 	display: flex;
+	    width: 100%;
+	    padding: 1vh 0vw; 
+	 }
+}
+
+
+@media screen and (max-width: 900px){
+
+    #contenido
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#Menu 
+	{
+	    margin-right: 5%;
+	    text-align: center;	
+	}
+	#TituloCabecera 
+	{
+		text-align: center;	
+		text-shadow:  0px 2px #02010a;
+	}
+  
+	#columna1
+	{
+		width: 100%;
+	}
+	#columna2
+	{
+		width: 100%;
+	}
+	#columna3
+	{
+		width: 100%;
+	}
+
+	header
+	{
+		width:100%;
+	}
+
+	footer div
+	{
+		width: 100%;
+	}
+
+	#columnasFooter
+	 {
+	 	display: flex;
+	    width: 98%;
+	    flex-wrap: wrap; 
+	    padding: 1vh 1vw; 
+	 }
+}
+
